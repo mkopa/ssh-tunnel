@@ -23,10 +23,12 @@ sudo systemctl status sshd.service
 
 ## Step 1
 
+Create startup file `/etc/ssh/sshd_config`
+
 ```
 sudo vim /etc/systemd/system/tunnel.service
 ```
-
+Paste configuration:
 ```
 [Unit]
 Description=Persistent SSH Tunnel
@@ -42,6 +44,7 @@ KillMode=mixed
 [Install]
 WantedBy=multi-user.target
 ```
+**Modify the `ExecStart` line with your settings**
 
 ## Step 2
 

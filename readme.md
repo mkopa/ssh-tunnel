@@ -18,7 +18,7 @@ ListenAddress 0.0.0.0
 ```
 restart sshd service:
 ```
-sudo systemctl status sshd.service
+sudo systemctl restart sshd.service
 ```
 
 ## Step 1

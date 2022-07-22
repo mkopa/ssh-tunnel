@@ -8,7 +8,7 @@ sudo vim /etc/systemd/system/tunnel.service
 
 ```
 [Unit]
-Description=Maintain Tunnel
+Description=Persistent SSH Tunnel
 After=network.target
 
 [Service]

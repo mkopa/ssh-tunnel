@@ -13,7 +13,7 @@ After=network.target
 
 [Service]
 User=marcin
-ExecStart=/usr/bin/ssh -i /home/marcin/.ssh/id_rsa -o ServerAliveInterval=60 -o ExitOnForwardFailure=yes -gnNT -R 0.0.0.0:20222:localhost:22 remoteuser@myremotevps vmstat 5
+ExecStart=/usr/bin/ssh -i /home/marcin/.ssh/id_rsa -o ServerAliveInterval=60 -o ExitOnForwardFailure=yes -gnNT -R 0.0.0.0:20222:localhost:22 remotevpsuser@myremotevpshost
 RestartSec=15
 Restart=always
 KillMode=mixed

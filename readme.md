@@ -1,5 +1,27 @@
 # Persistent SSH tunnel - Ubuntu 20.04 22.04
 
+## Dependencies
+
+```
+sudo apt update
+sudo apt install openssh-server
+```
+
+```
+Edit file /etc/ssh/sshd_config
+```
+sudo vim /etc/ssh/sshd_config
+```
+Uncomment or add the lines:
+```
+Port 22
+ListenAddress 0.0.0.0
+```
+restart sshd service:
+```
+sudo systemctl status sshd.service
+```
+
 ## Step 1
 
 ```

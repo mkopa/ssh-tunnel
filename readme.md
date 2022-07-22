@@ -23,7 +23,7 @@ sudo systemctl status sshd.service
 
 ## Step 1
 
-Create startup file `/etc/ssh/sshd_config`
+Create startup file `/etc/systemd/system/tunnel.service`
 
 ```
 sudo vim /etc/systemd/system/tunnel.service

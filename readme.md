@@ -7,7 +7,6 @@ sudo apt update
 sudo apt install openssh-server
 ```
 
-```
 Edit file /etc/ssh/sshd_config
 ```
 sudo vim /etc/ssh/sshd_config

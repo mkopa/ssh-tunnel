@@ -44,7 +44,7 @@ KillMode=mixed
 [Install]
 WantedBy=multi-user.target
 ```
-**Modify the `ExecStart` line with your settings**
+**Modify the `User` and `ExecStart` - path to the RSA private key, bind address (e.g. port 20222, which is accessible from the machine myremotevpshost)**
 
 ## Step 2
 

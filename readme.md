@@ -74,7 +74,7 @@ Otherwise (default value for this option is `no`), the server will always force 
 
 So, edit the `/etc/ssh/sshd_config` file (on remote VPS/Server):
 ```
-vim /etc/ssh/sshd_config
+sudo vim /etc/ssh/sshd_config
 ```
 add (or change) `GatewayPorts` option:
 ```

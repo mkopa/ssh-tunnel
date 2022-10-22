@@ -27,7 +27,7 @@ sudo systemctl restart sshd.service
 Create startup file `/etc/systemd/system/ssh-tunnel.service`
 
 ```
-sudo vim /etc/systemd/system/tunnel.service
+sudo vim /etc/systemd/system/ssh-tunnel.service
 ```
 Paste configuration:
 ```

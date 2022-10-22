@@ -24,7 +24,7 @@ sudo systemctl restart sshd.service
 
 ## Step 1
 
-Create startup file `/etc/systemd/system/tunnel.service`
+Create startup file `/etc/systemd/system/ssh-tunnel.service`
 
 ```
 sudo vim /etc/systemd/system/tunnel.service
@@ -51,8 +51,8 @@ WantedBy=multi-user.target
 
 ```
 sudo systemctl daemon-reload
-sudo systemctl enable tunnel
-sudo systemctl start tunnel
+sudo systemctl enable ssh-tunnel
+sudo systemctl start ssh-tunnel
 ```
 
 ### Done.
